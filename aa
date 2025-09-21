@@ -28,5 +28,8 @@ void inputPlayer(Player* P) {
 
    cout << "Enter player's age: ";
    cin >> p-> age;
-
+ 
+   cout <<"How many scores do you want to enter for " << p->username << "?";
+   cin >> p-> numscores;
+   cin.ignore();
 
