@@ -13,7 +13,7 @@ struct Player {
       scores = nullptr;
  }
 
-~player (){
+~Player (){
    delete[] scores;
    scores = nullptr;
   }
@@ -21,10 +21,7 @@ struct Player {
 
 void inputPlayer(Player* P) {
    cout << "Enter Player's username: ";
-   getline(cin, p->username);
-
-   cout << "Enter Player's Age: ";
-   cin >> p->age; 
+   getline(cin, P->username);
 
    cout << "Enter player's age: ";
    cin >> p-> age;
@@ -37,13 +34,13 @@ void inputPlayer(Player* P) {
 
    for (int i = 0; i < p ->numscores; i++) {
      cout << " > Enter goals of #" << i+ 1 << ": ";
-     cin >> p-> scores[i};
+     cin >> p-> scores[i];
    }
    cin.ignore();
 }
 
 void displayPlayer(player* P) {
-   cout << "\n--- Player infor ---\n";
+   cout << "\n--- Player info ---\n";
    cout << "Username: " << p->username << endl;
    cout << "Age: " << p->age << endl;
    cout << "Scores: ";
@@ -70,7 +67,7 @@ int main () {
 
      cout << "\n=========== Display All Players =========== \n";
       for (int i = 0; i < numPlayers; i ++) {
-        displayPlayers(&players[i]);
+        displayPlayer(&players[i]);
   }
 
    delete[] players;
