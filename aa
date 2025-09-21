@@ -29,14 +29,14 @@ void inputPlayer(Player* P) {
    cout << "Enter player's age: ";
    cin >> p-> age;
  
-   cout <<"How many scores do you want to enter for " << p->username << "?";
+   cout <<"How many goals do you want to enter for " << p->username << "?";
    cin >> p-> numscores;
    cin.ignore();
 
    p->scores = new int[p->numscores];
 
    for (int i = 0; i < p ->numscores; i++) {
-     cout << " > Enter Scores of #" << i+ 1 << ": ";
+     cout << " > Enter goals of #" << i+ 1 << ": ";
      cin >> p-> scores[i};
    }
    cin.ignore();
