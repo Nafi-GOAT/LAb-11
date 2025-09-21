@@ -8,7 +8,20 @@ struct Player {
   int numscore;
   int *scores;
 
-  Player () {
+  Player() {
       numScores = 0;
       scores = nullptr;
+ }
 
+~player (){
+   deleter [] scores;
+   scores = nullptr;
+  }
+};
+
+void inputPlayer(Player* P) {
+   cout << "Eneter Player's username: ";
+   getline(cin, p->username);
+
+   cout << "Enter Player's Age: ";
+   cin >> p->age; 
