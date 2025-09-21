@@ -5,7 +5,7 @@ using namespace std;
 struct Player {
   string username;
   int age;
-  int numscore;
+  int numScore;
   int *scores;
 
   Player() {
