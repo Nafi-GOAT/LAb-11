@@ -14,7 +14,7 @@ struct Player {
  }
 
 ~player (){
-   deleter [] scores;
+   delete[] scores;
    scores = nullptr;
   }
 };
