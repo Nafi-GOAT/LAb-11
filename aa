@@ -20,7 +20,7 @@ struct Player {
 };
 
 void inputPlayer(Player* P) {
-   cout << "Eneter Player's username: ";
+   cout << "Enter Player's username: ";
    getline(cin, p->username);
 
    cout << "Enter Player's Age: ";
