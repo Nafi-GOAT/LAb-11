@@ -5,7 +5,7 @@ using namespace std;
 struct Player {
   string username;
   int age;
-  int numScore;
+  int numScores;
   int *scores;
 
   Player() {
@@ -27,12 +27,12 @@ void inputPlayer(Player* P) {
    cin >> p-> age;
  
    cout <<"How many goals do you want to enter for " << p->username << "?";
-   cin >> p-> numscores;
+   cin >> p-> numScores;
    cin.ignore();
 
-   p->scores = new int[p->numscores];
+   p->scores = new int[p->numScores];
 
-   for (int i = 0; i < p ->numscores; i++) {
+   for (int i = 0; i < p ->numScores; i++) {
      cout << " > Enter goals of #" << i+ 1 << ": ";
      cin >> p-> scores[i];
    }
