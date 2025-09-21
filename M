@@ -1,1 +1,14 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Player {
+  string username;
+  int age;
+  int numscore;
+  int *scores;
+
+  Player () {
+      numScores = 0;
+      scores = nullptr;
 
