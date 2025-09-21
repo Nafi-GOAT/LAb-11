@@ -25,3 +25,8 @@ void inputPlayer(Player* P) {
 
    cout << "Enter Player's Age: ";
    cin >> p->age; 
+
+   cout << "Enter player's age: ";
+   cin >> p-> age;
+
+
